@@ -17,4 +17,5 @@ jobs:
           server: 15.165.247.44
           username: next
           password: pndcom#123
-          server-dir: ./studio/
+          server-dir: ./studio
+
