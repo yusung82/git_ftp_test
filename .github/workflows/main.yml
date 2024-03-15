@@ -14,8 +14,7 @@ jobs:
       - name: 📂 Sync files
         uses:
         with:
-          server: 15.165.247.44
-          username: next
-          password: pndcom#123
-          server-dir: ./studio
-
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ./studio/
