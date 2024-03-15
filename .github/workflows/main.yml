@@ -10,10 +10,10 @@ jobs:
       - name: Upload from public_html via FTP
         uses: airvzxf/ftp-deployment-action@latest
         with:
-          max_retries: 1
-          server: 15.165.247.44
-          user: next
-          password: pndcom#123
+          server: ${{ secrets.FTP_HOST }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           local_dir: "./"
           remote_dir: "./studio"
-          
+          max_retries: "1"
+          ftp_ssl_allow: "false"
