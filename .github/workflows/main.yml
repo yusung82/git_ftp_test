@@ -1,0 +1,20 @@
+name: 🚀 Deploy website on push
+on:
+  push:
+    branches:
+      - main
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+
+      - name: 📂 Sync files
+        uses:
+        with:
+          server: 15.165.247.44
+          username: next2
+          password: pndcom#123
+          server-dir: ./
