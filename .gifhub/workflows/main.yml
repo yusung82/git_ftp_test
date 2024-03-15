@@ -15,6 +15,6 @@ jobs:
         uses:
         with:
           server: 15.165.247.44
-          username: next2
+          username: next
           password: pndcom#123
-          server-dir: ./
+          server-dir: ./studio/
